@@ -28,10 +28,9 @@ app.get('/', function (req, res) {
     res.end();
 });
 
-app.get('/test/', function (req, res) {
-
+app.get('/color/', function (req, res) {
     const client = new Client('127.0.0.1', 8888);
-    client.send('/vvvv', req.query.id, () => {
+    client.send('/vvvv', req.query.color, () => {
         client.close();
     });
 
@@ -39,6 +38,18 @@ app.get('/test/', function (req, res) {
     res.json({ working: true });
     res.end();
 });
+
+app.post('/color1/', function(request, response) {
+    const client = new Client('127.0.0.1', 8888);
+    client.send('/vvvv', request.body.color, () => {
+        client.close();
+    });
+
+    console.log('POST color1');
+    console.dir();
+    response.writeHead(200, {'Content-Type': 'text/html'});
+    response.end('thanks');
+  })
 
 server.listen(port, (err) => {
     if (err) {
