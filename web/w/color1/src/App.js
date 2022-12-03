@@ -18,7 +18,7 @@ function App() {
     'Content-Type': 'application/x-www-form-urlencoded'
   };
 
-  const url = "http://localhost:5000/color1";
+  const url = "http://192.168.31.192:5000/color1";
 
   const sendRequest = () => {
     axios.post(url, { color: mycolor.hex });
@@ -27,7 +27,7 @@ function App() {
   return (
     <>
       <div>
-        <button onClick={() => { sendRequest() }}>Click Me!</button>
+        <button style={{height: '100px', width: '100px'}} onClick={() => { sendRequest() }}>Click Me!</button>
         <div className='row mt-3'>
           <div className='col-4'>
             <p style={{ color: mycolor.hex }}>{question}</p>
