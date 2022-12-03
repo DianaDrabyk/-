@@ -18,8 +18,10 @@ function App() {
     'Content-Type': 'application/x-www-form-urlencoded'
   };
 
+  const url = "http://localhost:5000/color1";
+
   const sendRequest = () => {
-    axios.post('http://localhost/vvvv', { name: 'Di' }, headers);
+    axios.post(url, { color: mycolor.hex });
   }
 
   return (
