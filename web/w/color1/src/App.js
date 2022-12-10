@@ -8,7 +8,7 @@ function App() {
   const question = "Який колір?";
   const questions = ["Який колір?", "Як колір?", "Я колір?", "Колір?"];
 
-  const [mycolor, setColor] = useState('fff');
+  const [mycolor, setColor] = useState('ffff');
 
   const handleChange = (color) => {
     setColor(color);
@@ -18,7 +18,7 @@ function App() {
     'Content-Type': 'application/x-www-form-urlencoded'
   };
 
-  const url = "http://192.168.31.192:5000/color1";
+  const url = "http://localhost:5000/color1";
 
   const sendRequest = () => {
     axios.post(url, { color: mycolor.hex });
@@ -27,8 +27,8 @@ function App() {
   return (
     <>
       <div>
-        <button style={{height: '100px', width: '100px'}} onClick={() => { sendRequest() }}>Click Me!</button>
-        <div className='row mt-3'>
+        <button style={{height: '100px', width: '1360px'}} onClick={() => { sendRequest() }}>Click Me!</button>
+        <div className='row mt-5'>
           <div className='col-4'>
             <p style={{ color: mycolor.hex }}>{question}</p>
           </div>
@@ -40,20 +40,9 @@ function App() {
           </div>
 
         </div>
-        <div className='row mb-2'>
+        <div className='row mb-1'>
           <div className='col-4'>
-            <img src='ICU.gif'>
-
-            </img>
-          </div>
-          <div className='col-4'>
-            <img src='ICU.gif'>
-
-
-            </img>
-          </div>
-          <div className='col-4'>
-            <img src='ICU.gif'>
+            <img src='1.png'>
 
             </img>
           </div>
@@ -63,29 +52,25 @@ function App() {
           <div className='col-4'>
             <p>
               Чи це актуально?
+        
             </p>
-          </div>
-          <div className='col-4'>
-            <img src='ICU.gif'>
+              
 
-            </img>
+            
 
           </div>
           <div className='col-4'>
             <p>
-              Чи це було актуально?
+              Що ви відчуваєте дивлячись на небо?
             </p>
           </div>
         </div>
         <p>
-          Чи це актуально?
+          Чи любили ви квіти?
         </p>
         <p>
-          Чи це було актуально?
+          Чи сняться вам сни?
         </p>
-        <img src='ICU.gif'>
-
-        </img>
         {/* <div className='col-6'>
           <p>
 

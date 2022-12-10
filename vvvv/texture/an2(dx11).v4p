@@ -1,11 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta42.dtd" >
-   <PATCH nodename="D:\vvvv_beta_42_x64\packs\texture\an2(dx11).v4p">
+   <PATCH nodename="D:\sem1\opitnik\vvvv\texture\an2(dx11).v4p" scrollx="825" scrolly="1620">
    <BOUNDS type="Window" left="8145" top="1395" width="9000" height="9000">
    </BOUNDS>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="0">
-   <BOUNDS type="Node" left="3330" top="6135" width="100" height="100">
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InABox" id="0">
+   <BOUNDS type="Node" left="2910" top="5460" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3330" top="6135" width="6000" height="4500">
+   <BOUNDS type="Box" left="2910" top="5460" width="6000" height="4500">
    </BOUNDS>
    <BOUNDS type="Window" left="660" top="270" width="6240" height="5085">
    </BOUNDS>
@@ -88,16 +88,6 @@
    </NODE>
    <LINK srcnodeid="4" srcpinname="Transform Out" dstnodeid="2" dstpinname="Transform In">
    </LINK>
-   <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="1665" top="3030" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Spread Count" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Width" slicecount="1" values="0.58">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7">
    <BOUNDS type="Box" left="5355" top="2400" width="795" height="480">
    </BOUNDS>
