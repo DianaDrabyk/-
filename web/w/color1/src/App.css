@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 100vmin;
   pointer-events: none;
 }
 
@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(7, 7, 7);
 }
 
 .App-link {
@@ -39,7 +39,7 @@
 
 .move {
   color:fuchsia;
-  font-size: 50px;
+  font-size: 100px;
 }
 .moveAn {
   animation: App-logo-spin infinite 5s linear;

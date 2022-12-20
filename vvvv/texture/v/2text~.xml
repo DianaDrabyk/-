@@ -95,6 +95,8 @@
    </PIN>
    <PIN pinname="Height" slicecount="1" values="256">
    </PIN>
+   <PIN pinname="Color" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   </PIN>
    </NODE>
    <LINK srcnodeid="9" srcpinname="Output String" dstnodeid="10" dstpinname="Text">
    </LINK>

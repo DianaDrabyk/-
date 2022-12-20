@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta42.dtd" >
-   <PATCH nodename="D:\vvvv_beta_42_x64\packs\v\5.v4p" scrollx="9555" scrolly="0">
-   <BOUNDS type="Window" left="1770" top="1500" width="6420" height="10440">
+   <PATCH nodename="D:\vvvv_beta_42_x64\packs\v\5.v4p" scrollx="5250" scrolly="0">
+   <BOUNDS type="Window" left="11670" top="2010" width="6420" height="10440">
    </BOUNDS>
    <NODE systemname="Mouse (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (Devices Window)" componentmode="Hidden" id="4">
    <BOUNDS type="Node" left="3912" top="120" width="100" height="100">
@@ -721,17 +721,17 @@
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="4815" top="2835" width="1740" height="2145">
+   <BOUNDS type="Window" left="8010" top="2460" width="7605" height="7290">
    </BOUNDS>
    </NODE>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="151">
-   <BOUNDS type="Node" left="8172" top="771" width="100" height="100">
+   <BOUNDS type="Node" left="8457" top="1776" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer 2" visible="1">
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <PIN pinname="Layer 1" visible="1">
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer Template Count" slicecount="1" values="3">
    </PIN>
@@ -739,8 +739,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="151" srcpinname="Layer" dstnodeid="28" dstpinname="Layers">
-   </LINK>
-   <LINK srcnodeid="147" srcpinname="Layer" dstnodeid="151" dstpinname="Layer 1">
    </LINK>
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="152">
    <BOUNDS type="Node" left="210" top="2220" width="675" height="270">
@@ -961,5 +959,45 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="172" srcpinname="Render State Out" dstnodeid="56" dstpinname="Render State">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="173">
+   <BOUNDS type="Box" left="4200" top="3975" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4200" top="3975" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="X">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="52" srcpinname="X" dstnodeid="173" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="174">
+   <BOUNDS type="Box" left="5355" top="4125" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5355" top="4125" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Y">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="52" srcpinname="Y" dstnodeid="174" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="175">
+   <BOUNDS type="Box" left="6285" top="6765" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6285" top="6765" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="147" srcpinname="Layer" dstnodeid="175" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="147" srcpinname="Layer" dstnodeid="151" dstpinname="Layer 1">
    </LINK>
    </PATCH>

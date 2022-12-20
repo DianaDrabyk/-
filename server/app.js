@@ -35,24 +35,97 @@ app.get('/', function (req, res) {
     res.end();
 });
 
-app.get('/color/', function (req, res) {
-    const client = new Client('127.0.0.1', 8888);
-    client.send('/vvvv', req.query.color, () => {
-        client.close();
-    });
-
-    res.status(200);
-    res.json({ working: true });
-    res.end();
-});
-
 app.post('/color1/', function(request, response) {
     const client = new Client('127.0.0.1', 8888);
-    client.send('/vvvv', request.body.color, () => {
+    client.send('/question1', request.body.color, () => {
         client.close();
     });
 
     console.log('POST color1');
+    console.dir();
+    response.writeHead(200, {'Content-Type': 'text/html'});
+    response.end('thanks');
+  })
+
+  app.post('/color2/', function(request, response) {
+    const client = new Client('127.0.0.1', 8888);
+    client.send('/question2', request.body.color, () => {
+        client.close();
+    });
+
+    console.log('POST color2');
+    console.dir();
+    response.writeHead(200, {'Content-Type': 'text/html'});
+    response.end('thanks');
+  })
+
+  app.post('/color3/', function(request, response) {
+    const client = new Client('127.0.0.1', 8888);
+    client.send('/question3', request.body.color, () => {
+        client.close();
+    });
+
+    console.log('POST color3');
+    console.dir();
+    response.writeHead(200, {'Content-Type': 'text/html'});
+    response.end('thanks');
+  })
+
+  app.post('/color4/', function(request, response) {
+    const client = new Client('127.0.0.1', 8888);
+    client.send('/question4', request.body.color, () => {
+        client.close();
+    });
+
+    console.log('POST color4');
+    console.dir();
+    response.writeHead(200, {'Content-Type': 'text/html'});
+    response.end('thanks');
+  })
+
+  app.post('/color5/', function(request, response) {
+    const client = new Client('127.0.0.1', 8888);
+    client.send('/question5', request.body.color, () => {
+        client.close();
+    });
+
+    console.log('POST color5');
+    console.dir();
+    response.writeHead(200, {'Content-Type': 'text/html'});
+    response.end('thanks');
+  })
+
+  app.post('/color6/', function(request, response) {
+    const client = new Client('127.0.0.1', 8888);
+    client.send('/question6', request.body.color, () => {
+        client.close();
+    });
+
+    console.log('POST color6');
+    console.dir();
+    response.writeHead(200, {'Content-Type': 'text/html'});
+    response.end('thanks');
+  })
+
+  app.post('/color7/', function(request, response) {
+    const client = new Client('127.0.0.1', 8888);
+    client.send('/question7', request.body.color, () => {
+        client.close();
+    });
+
+    console.log('POST color7');
+    console.dir();
+    response.writeHead(200, {'Content-Type': 'text/html'});
+    response.end('thanks');
+  })
+
+  app.post('/color8/', function(request, response) {
+    const client = new Client('127.0.0.1', 8888);
+    client.send('/question8', request.body.color, () => {
+        client.close();
+    });
+
+    console.log('POST color8');
     console.dir();
     response.writeHead(200, {'Content-Type': 'text/html'});
     response.end('thanks');

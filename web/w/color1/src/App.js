@@ -11,6 +11,7 @@ import Question4 from './components/Questions/Question4';
 import Question5 from './components/Questions/Question5';
 import Question6 from './components/Questions/Question6';
 import Question7 from './components/Questions/Question7';
+import Question8 from './components/Questions/Question8';
 import Finish from './components/Finish';
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
     { path: "/question5", element: <Question5 /> },
     { path: "/question6", element: <Question6 /> },
     { path: "/question7", element: <Question7 /> },
+    { path: "/question8", element: <Question8 /> },
     { path: "/finish", element: <Finish /> }
   ]);
   return routes;

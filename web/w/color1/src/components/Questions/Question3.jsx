@@ -4,9 +4,10 @@ function Question3() {
   return (
     <>
       <QuestionTemplate
-        question={'Чи любили ви квіти?'}
+        question={'вина'}
         to={'/question4'}
         from={'/question2'}
+        endpoint="color3"
       />
     </>
   );

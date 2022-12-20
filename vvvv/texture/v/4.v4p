@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta42.dtd" >
-   <PATCH nodename="D:\vvvv_beta_42_x64\packs\v\4.v4p" scrollx="1590" scrolly="435">
-   <BOUNDS type="Window" left="8010" top="2460" width="7605" height="7290">
+   <PATCH nodename="D:\sem1\opitnik\vvvv\texture\v\4.v4p" scrollx="1590" scrolly="435">
+   <BOUNDS type="Window" left="525" top="2745" width="7605" height="7290">
    </BOUNDS>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="0" stayontop="0">
    <BOUNDS type="Node" left="5448" top="5928" width="100" height="100">

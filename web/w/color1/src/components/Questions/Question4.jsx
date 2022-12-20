@@ -4,9 +4,10 @@ function Question4() {
   return (
     <>
       <QuestionTemplate
-        question={'Чи сняться вам сни?'}
+        question={'надія'}
         to={'/question5'}
         from={'/question3'}
+        endpoint="color4"
       />
     </>
   );

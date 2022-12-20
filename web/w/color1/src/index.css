@@ -1,3 +1,8 @@
+html, body, #root {
+  height: 100%;
+  font-family: sans-serif;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,18 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root {
+  background-color: black;
+}
+
+div, p {
+  color: white;
+  font-size: 18px;
+}
+
+.hue-vertical > div {
+  display: none;
+  opacity: 0.85;
 }

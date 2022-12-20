@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta42.dtd" >
-   <PATCH nodename="D:\vvvv_beta_42_x64\packs\v\2text.v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="D:\sem1\opitnik\vvvv\texture\v\2text.v4p" scrollx="0" scrolly="-360">
    <BOUNDS type="Window" left="0" top="456" width="6408" height="5340">
    </BOUNDS>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="6">
@@ -15,7 +15,7 @@
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
-   <PIN pinname="Input String" slicecount="3" values="|ЦЕ БУЛО?|,|ЧАС НАСТАВ?|,|ВСЕ БУДЕ?|">
+   <PIN pinname="Input String" slicecount="3" values="|р&cr;&lf;и&cr;&lf;с&cr;&lf;у&cr;&lf;н&cr;&lf;о&cr;&lf;к|,|ж&cr;&lf;и&cr;&lf;в&cr;&lf;о&cr;&lf;п&cr;&lf;и&cr;&lf;с|,|р&cr;&lf;и&cr;&lf;с&cr;&lf;у&cr;&lf;н&cr;&lf;к|">
    </PIN>
    <PIN pinname="Show Characters [#0..#32,#127]" slicecount="1" values="0">
    </PIN>
@@ -89,13 +89,15 @@
    </PIN>
    <BOUNDS type="Box" left="3630" top="3180">
    </BOUNDS>
-   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   <PIN pinname="Font" slicecount="1" values="|Yu Gothic UI|">
    </PIN>
    <PIN pinname="Size" slicecount="1" values="150">
    </PIN>
    <PIN pinname="Height" slicecount="1" values="256">
    </PIN>
-   <PIN pinname="Color" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   <PIN pinname="Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Bold" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="9" srcpinname="Output String" dstnodeid="10" dstpinname="Text">
@@ -145,13 +147,13 @@
    <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Index">
    </LINK>
    <NODE id="13" systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <PIN pinname="ScaleY" slicecount="1" pintype="Input" visible="1" values="0.21">
+   <PIN pinname="ScaleY" slicecount="1" pintype="Input" visible="1" values="0.23">
    </PIN>
-   <PIN pinname="ScaleX" slicecount="1" pintype="Input" visible="1" values="1.02">
+   <PIN pinname="ScaleX" slicecount="1" pintype="Input" visible="1" values="0.76">
    </PIN>
-   <PIN pinname="TranslateY" slicecount="1" pintype="Input" visible="1" values="0.81">
+   <PIN pinname="TranslateY" slicecount="1" pintype="Input" visible="1" values="0.91">
    </PIN>
-   <PIN pinname="TranslateX" slicecount="1" pintype="Input" visible="1" values="0">
+   <PIN pinname="TranslateX" slicecount="1" pintype="Input" visible="1" values="-1.31">
    </PIN>
    <BOUNDS type="Node" left="4560" top="2610" width="100" height="100">
    </BOUNDS>
@@ -173,7 +175,7 @@
    </PIN>
    <PIN pinname="Rotate" pintype="Input" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="CenterX" pintype="Input" visible="1" slicecount="1" values="0.29">
+   <PIN pinname="CenterX" pintype="Input" visible="1" slicecount="1" values="0.76">
    </PIN>
    <PIN pinname="CenterY" pintype="Input" visible="1" slicecount="1" values="0">
    </PIN>

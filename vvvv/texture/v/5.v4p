@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta42.dtd" >
-   <PATCH nodename="D:\vvvv_beta_42_x64\packs\v\5.v4p" scrollx="5250" scrolly="0">
-   <BOUNDS type="Window" left="11670" top="2010" width="6420" height="10440">
+   <PATCH nodename="D:\sem1\opitnik\vvvv\texture\v\5.v4p" scrollx="3225" scrolly="0">
+   <BOUNDS type="Window" left="7800" top="690" width="6420" height="10440">
    </BOUNDS>
    <NODE systemname="Mouse (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (Devices Window)" componentmode="Hidden" id="4">
    <BOUNDS type="Node" left="3912" top="120" width="100" height="100">
@@ -65,9 +65,9 @@
    <PACK Name="addonpack" Version="42.0.0">
    </PACK>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="28" border="1">
-   <BOUNDS type="Node" left="9660" top="144" width="100" height="100">
+   <BOUNDS type="Node" left="3735" top="849" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="9660" top="144" width="3516" height="3288">
+   <BOUNDS type="Box" left="3735" top="849" width="16755" height="8820">
    </BOUNDS>
    <BOUNDS type="Window" left="9930" top="1950" width="5250" height="4500">
    </BOUNDS>
@@ -615,9 +615,9 @@
    <LINK srcnodeid="135" srcpinname="Y Output Value" dstnodeid="139" dstpinname="Push">
    </LINK>
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="146">
-   <BOUNDS type="Node" left="12033" top="5175" width="864" height="240">
+   <BOUNDS type="Node" left="8223" top="3360" width="864" height="240">
    </BOUNDS>
-   <BOUNDS type="Box" left="12033" top="5175" width="1164" height="432">
+   <BOUNDS type="Box" left="8223" top="3360" width="1164" height="432">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|накопичення натисків|">
    </PIN>
@@ -716,18 +716,10 @@
    </LINK>
    <LINK srcnodeid="108" srcpinname="Y Output Value" dstnodeid="142" dstpinname="Input 1">
    </LINK>
-   <NODE systemname="4" filename="4.v4p" nodename="4.v4p" componentmode="InAWindow" id="147">
-   <BOUNDS type="Node" left="8184" top="96" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="8010" top="2460" width="7605" height="7290">
-   </BOUNDS>
-   </NODE>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="151">
    <BOUNDS type="Node" left="8457" top="1776" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Layer 2" visible="1">
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -792,7 +784,7 @@
    <PIN pinname="Y Input Value" slicecount="4" values="0.2,-0.3,0.2,0.8">
    </PIN>
    </NODE>
-   <NODE systemname="2text" filename="%VVVV%\packs\v\2text.v4p" nodename="%VVVV%\packs\v\2text.v4p" componentmode="Hidden" id="156">
+   <NODE systemname="2text" filename="%VVVV%\packs\v\2text.v4p" nodename="%VVVV%\packs\v\2text.v4p" componentmode="InAWindow" id="156">
    <BOUNDS type="Node" left="13845" top="2340" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
@@ -806,8 +798,6 @@
    <PIN pinname="Index" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="156" srcpinname="Layer" dstnodeid="151" dstpinname="Layer 2">
-   </LINK>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
    <LINK srcnodeid="56" srcpinname="Layer" dstnodeid="151" dstpinname="Layer 3">
@@ -923,9 +913,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="170">
-   <BOUNDS type="Box" left="14295" top="4260" width="1860" height="1740">
+   <BOUNDS type="Box" left="15825" top="4110" width="1860" height="1740">
    </BOUNDS>
-   <BOUNDS type="Node" left="14295" top="4260" width="0" height="0">
+   <BOUNDS type="Node" left="15825" top="4110" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="1">
    </PIN>
@@ -955,7 +945,7 @@
    </BOUNDS>
    <PIN pinname="Render State Out" visible="1">
    </PIN>
-   <PIN pinname="Fill Mode" slicecount="1" values="WireFrame">
+   <PIN pinname="Fill Mode" slicecount="1" values="Point">
    </PIN>
    </NODE>
    <LINK srcnodeid="172" srcpinname="Render State Out" dstnodeid="56" dstpinname="Render State">
@@ -995,9 +985,19 @@
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
+   <PIN pinname="Input Node">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="147" srcpinname="Layer" dstnodeid="175" dstpinname="Input Node">
-   </LINK>
+   <NODE id="147" componentmode="InAWindow" systemname="4" filename="4.v4p" nodename="4.v4p">
+   <BOUNDS type="Window" left="525" top="2745" width="7605" height="7290">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8184" top="96" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
    <LINK srcnodeid="147" srcpinname="Layer" dstnodeid="151" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="147" srcpinname="Layer" dstnodeid="175" dstpinname="Input Node">
    </LINK>
    </PATCH>
