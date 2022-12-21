@@ -27,7 +27,7 @@ const QuestionTemplate = ({ question, to, from, endpoint }) => {
     }
 
     return (
-        <div className="col-6 offset-2">
+        <div className="col-6 offset-2 offset-md-3">
             <div className="pt-4 pb-1 d-flex flex-row justify-content-between align-items-center">
                 <div>{question}</div>
                 <div style={{height: '12px', width: '12px', backgroundColor: mycolor?.hex}}></div>
