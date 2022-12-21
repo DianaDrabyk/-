@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 const QuestionTemplate = ({ question, to, from, endpoint }) => {
     const navigate = useNavigate();
-    const url = "http://192.168.1.100/:5000/";
+    const url = "http://localhost:5000/";
     const [mycolor, setColor] = useState('ffff');
 
     const handleChange = (color) => {
